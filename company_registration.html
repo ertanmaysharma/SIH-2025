@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Registration - PM Internship Scheme</title>
+    <link rel="stylesheet" href="/company_registration.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Company Registration</h1>
+            <p>Join the PM Internship Scheme as a Partner Organization</p>
+        </div>
+        
+        <div class="form-container">
+            <a href="index.html" class="back-btn">← Back to Home</a>
+            
+            <form>
+                <div class="form-group">
+                    <label for="company-name">Company Name</label>
+                    <input type="text" id="company-name" name="company-name" required>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="industry">Industry</label>
+                        <select id="industry" name="industry" required>
+                            <option value="">Select Industry</option>
+                            <option value="technology">Technology</option>
+                            <option value="finance">Finance</option>
+                            <option value="healthcare">Healthcare</option>
+                            <option value="manufacturing">Manufacturing</option>
+                            <option value="education">Education</option>
+                            <option value="retail">Retail</option>
+                            <option value="consulting">Consulting</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="company-size">Company Size</label>
+                        <select id="company-size" name="company-size" required>
+                            <option value="">Select Size</option>
+                            <option value="startup">Startup (1-50)</option>
+                            <option value="medium">Medium (51-500)</option>
+                            <option value="large">Large (500+)</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="contact-person">Contact Person Name</label>
+                    <input type="text" id="contact-person" name="contact-person" required>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="preffered_city">Preffered city</label>
+                        <input type="text" id="preffered_city" name="preffered_city" required>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="website">Company Website</label>
+                    <input type="url" id="website" name="website">
+                </div>
+                
+                <div class="form-group">
+                    <label for="internship-roles">Available Internship Roles</label>
+                    <textarea id="internship-roles" name="internship-roles" rows="4" placeholder="Describe the internship positions you want to offer (e.g., Software Development, Marketing, Data Analysis, etc.)"></textarea>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="duration">Internship Duration</label>
+                        <select id="duration" name="duration" required>
+                            <option value="">Select Duration</option>
+                            <option value="1-3">1-3 months</option>
+                            <option value="3-6">3-6 months</option>
+                            <option value="6-12">6-12 months</option>
+                            <option value="flexible">Flexible</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="interns-needed">Number of Interns Needed</label>
+                        <input type="number" id="interns-needed" name="interns-needed" min="1" required>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="requirements">Requirements & Qualifications</label>
+                    <textarea id="requirements" name="requirements" rows="3" placeholder="Specify the skills, qualifications, or experience required for interns"></textarea>
+                </div>
+                
+                <button type="submit" class="btn">Register Company</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
