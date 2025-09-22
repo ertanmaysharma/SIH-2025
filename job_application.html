@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Application - PM Internship Scheme</title>
+    <link rel="stylesheet" href="company_registration.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Student Application</h1>
+            <p>Apply for Internships through PM Internship Scheme</p>
+        </div>
+        
+        <div class="form-container">
+            <a href="index.html" class="back-btn">← Back to Home</a>
+            
+            <form id="studentForm">
+                <div class="form-group">
+                    <label for="student-name">Full Name</label>
+                    <input type="text" id="student-name" name="student-name" required>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="education">Education Level</label>
+                        <select id="education" name="education" required>
+                            <option value="">Select Education</option>
+                            <option value="diploma">Diploma</option>
+                            <option value="undergraduate">Undergraduate</option>
+                            <option value="postgraduate">Postgraduate</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="field">Field of Study</label>
+                        <input type="text" id="field" name="field" required>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="skills">Skills</label>
+                    <textarea id="skills" name="skills" rows="3" placeholder="List your technical and soft skills"></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label for="preferred-location">Preferred Location</label>
+                    <input type="text" id="preferred-location" name="preferred-location" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="internship-type">Preferred Internship Type</label>
+                    <select id="internship-type" name="internship-type" required>
+                        <option value="">Select Type</option>
+                        <option value="technology">Technology</option>
+                        <option value="finance">Finance</option>
+                        <option value="marketing">Marketing</option>
+                        <option value="design">Design</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                
+                <button type="submit" class="btn">Submit Application</button>
+            </form>
+        </div>
+    </div>
+    
+    <script>
+        document.getElementById('studentForm').onsubmit = function(e) {
+            e.preventDefault();
+            alert('Application submitted successfully!');
+            window.location.href = 'SIH 2025/frontend/index.html';
+        };
+    </script>
+</body>
+</html>
