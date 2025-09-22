@@ -15,8 +15,8 @@ function initializeApp() {
 }
 
 function setupButtonHandlers() {
-    const studentBtn = document.getElementById('studentBtn');
-    const companyBtn = document.getElementById('companyBtn');
+    const studentBtn = document.getElementById('studentBtn').oneclick() => location.href = 'job_application.html';
+    const companyBtn = document.getElementById('companyBtn').oneclick() => location.href = 'company_registration.html';
 
     if (studentBtn) {
         studentBtn.addEventListener('click', function(e) {
