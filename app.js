@@ -19,11 +19,11 @@ function setupButtonHandlers() {
     const companyBtn = document.getElementById('companyBtn');
 
     if (studentBtn) {
-        studentBtn.onclick = () => location.href = 'job_application.html';
+        studentBtn.onclick = () => location.href = '/job_application.html';
     }
 
     if (companyBtn) {
-        companyBtn.onclick = () => location.href = 'company_registration.html';
+        companyBtn.onclick = () => location.href = '/company_registration.html';
     }
 }
 
