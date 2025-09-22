@@ -1,18 +1,14 @@
-// PM Internship Scheme - Main Page JavaScript
-
 document.addEventListener('DOMContentLoaded', function() {
-    // Initialize the application
+ 
     initializeApp();
 });
 
 function initializeApp() {
-    // Set up button event listeners
+    
     setupButtonHandlers();
 
-    // Add smooth scrolling for better UX
     setupSmoothScrolling();
 
-    // Add loading states for buttons
     setupButtonLoadingStates();
 
     console.log('PM Internship Scheme application initialized');
@@ -58,7 +54,7 @@ function setupButtonHandlers() {
 }
 
 function handleStudentButtonClick() {
-    const button = document.getElementById('studentBtn');
+    const button = document.getElementById('studentBtn').oneclick() => location.href = 'job_application.html';
 
     // Prevent multiple clicks
     if (button && button.disabled) return;
@@ -77,7 +73,7 @@ function handleStudentButtonClick() {
 }
 
 function handleCompanyButtonClick() {
-    const button = document.getElementById('companyBtn');
+    const button = document.getElementById('companyBtn').oneclick() => location.href = 'company_registration.html';
 
     // Prevent multiple clicks
     if (button && button.disabled) return;
