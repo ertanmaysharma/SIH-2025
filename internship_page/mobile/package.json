@@ -1,0 +1,32 @@
+{
+  "name": "internship-swiper",
+  "version": "1.0.0",
+  "description": "React Native component for Tinder-style internship swiping",
+  "main": "InternshipSwiper.js",
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-native": "^0.72.0",
+    "react-native-gesture-handler": "^2.12.0",
+    "react-native-reanimated": "^3.3.0",
+    "react-native-vector-icons": "^10.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.20.0",
+    "@babel/preset-env": "^7.20.0",
+    "@babel/runtime": "^7.20.0"
+  },
+  "scripts": {
+    "start": "react-native start",
+    "android": "react-native run-android",
+    "ios": "react-native run-ios"
+  },
+  "keywords": [
+    "react-native",
+    "internship",
+    "swipe",
+    "tinder",
+    "recommendation"
+  ],
+  "author": "SIH 2025 Team",
+  "license": "MIT"
+}
