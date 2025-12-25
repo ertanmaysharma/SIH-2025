@@ -3,87 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student Application - PM Internship Scheme</title>
-    <link rel="stylesheet" href="company_registration.css">
+    <title>Job Application Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 500px;
+            margin: 50px auto;
+            background: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background: #0056b3;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
-        <div class="header">
-            <h1>Student Application</h1>
-            <p>Apply for Internships through PM Internship Scheme</p>
-        </div>
-        
-        <div class="form-container">
-            <a href="index.html" class="back-btn">← Back to Home</a>
-            
-            <form id="studentForm">
-                <div class="form-group">
-                    <label for="student-name">Full Name</label>
-                    <input type="text" id="student-name" name="student-name" required>
-                </div>
-                
-                <div class="form-row">
-                    <div class="form-group">
-                        <label for="email">Email Address</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="phone">Phone Number</label>
-                        <input type="tel" id="phone" name="phone" required>
-                    </div>
-                </div>
-                
-                <div class="form-row">
-                    <div class="form-group">
-                        <label for="education">Education Level</label>
-                        <select id="education" name="education" required>
-                            <option value="">Select Education</option>
-                            <option value="diploma">Diploma</option>
-                            <option value="undergraduate">Undergraduate</option>
-                            <option value="postgraduate">Postgraduate</option>
-                        </select>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="field">Field of Study</label>
-                        <input type="text" id="field" name="field" required>
-                    </div>
-                </div>
-                
-                <div class="form-group">
-                    <label for="skills">Skills</label>
-                    <textarea id="skills" name="skills" rows="3" placeholder="List your technical and soft skills"></textarea>
-                </div>
-                
-                <div class="form-group">
-                    <label for="preferred-location">Preferred Location</label>
-                    <input type="text" id="preferred-location" name="preferred-location" required>
-                </div>
-                
-                <div class="form-group">
-                    <label for="internship-type">Preferred Internship Type</label>
-                    <select id="internship-type" name="internship-type" required>
-                        <option value="">Select Type</option>
-                        <option value="technology">Technology</option>
-                        <option value="finance">Finance</option>
-                        <option value="marketing">Marketing</option>
-                        <option value="design">Design</option>
-                        <option value="other">Other</option>
-                    </select>
-                </div>
-                
-                <button type="submit" class="btn">Submit Application</button>
-            </form>
-        </div>
+        <h2>Job Application Form</h2>
+        <form id="jobForm">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="degree">Highest Qualification</label>
+            <select id="degree" name="degree" required>
+                <option value="">Select</option>
+                <option value="B.Tech">B.Tech</option>
+                <option value="M.Tech">M.Tech</option>
+                <option value="B.Sc">B.Sc</option>
+                <option value="M.Sc">M.Sc</option>
+                <option value="Other">Other</option>
+            </select>
+
+            <label for="resume">Resume Link</label>
+            <input type="url" id="resume" name="resume" placeholder="Paste Google Drive/OneDrive link" required>
+
+            <label for="message">Why are you applying?</label>
+            <textarea id="message" name="message" rows="4" placeholder="Briefly tell us" required></textarea>
+
+            <button type="submit">Submit Application</button>
+        </form>
     </div>
-    
+
     <script>
-        document.getElementById('studentForm').onsubmit = function(e) {
-            e.preventDefault();
-            alert('Application submitted successfully!');
-            window.location.href = 'SIH 2025/frontend/index.html';
-        };
+        const form = document.getElementById('jobForm');
+
+        form.addEventListener('submit', function(e) {
+            e.preventDefault(); // prevent page reload
+            alert("Form submitted successfully!");
+            form.reset();
+        });
     </script>
 </body>
 </html>
