@@ -1,7 +1,0 @@
-Flask==2.3.2
-Flask-CORS==4.0.0
-scikit-learn==1.3.0
-pandas==2.0.3
-numpy==1.24.3
-python-dateutil==2.8.2
-Werkzeug==2.3.6
